@@ -65,20 +65,10 @@ Evaluation on **1,000 test images**:
 - Python: _[e.g., 3.10]_  
 - Core libs: TensorFlow/Keras, NumPy, Pandas, Matplotlib, scikit-learn
 
-### Option A — Run via Notebook (recommended for this repo)
+### Run via Notebook (recommended for this repo)
 1. Open the notebook: `Submission-Akhir_Image-Classification.ipynb`
 2. Run cells top-to-bottom.
 3. Export artifacts (confusion matrix, ROC, Grad-CAM examples) to `results/`.
-
-### Option B — Scripts (if you later modularize)
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Run inference:
-   ```bash
-   python inference.py --input_dir <TEST_DIR> --output_csv inference_output/test_predictions.csv
-   ```
 
 ## Limitations & Next Steps
 - Improve **no_tumor recall** via class weighting / focal loss / threshold tuning.
